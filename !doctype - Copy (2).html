@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - pgLang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            font-size: 1.2em;
+            color: #555;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-bottom: 20px; /* More space for back button */
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .back-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            background-color: #444;
+            color: white;
+            text-decoration: none;
+            padding: 14px; /* Bigger button */
+            border-radius: 5px;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .back-button:hover {
+            background-color: #555;
+        }
+        .footer {
+            margin-top: 30px;
+            padding: 15px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+        .logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 120px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Logo in top-right corner -->
+    <img src="images.png" alt="pgLang Logo" class="logo">
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="sent.html" method="get">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+        
+        <!-- Back to Home Button -->
+        <a href="!doctype - Copy.html" class="back-button">⬅ Back to Home</a>
+    </div>
+
+    <!-- Footer with Trademark and Copyright -->
+    <div class="footer">
+        &copy; 2025 pgLang Records™. All Rights Reserved.
+    </div>
+
+</body>
+</html>
